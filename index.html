@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투두리스트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>투두리스트</h1>
+            <div class="view-toggle">
+                <button id="listViewBtn" class="view-btn active">리스트</button>
+                <button id="calendarViewBtn" class="view-btn">달력</button>
+            </div>
+        </header>
+
+        <main>
+            <!-- 할일 추가 폼 -->
+            <div class="add-todo-section">
+                <div class="input-group">
+                    <input type="text" id="todoInput" placeholder="새로운 할일을 입력하세요..." maxlength="100">
+                    <input type="date" id="todoDate">
+                    <button id="addTodoBtn" class="add-btn">추가</button>
+                </div>
+            </div>
+
+            <!-- 리스트 뷰 -->
+            <div id="listView" class="view-container">
+                <div class="todo-list">
+                    <ul id="todoList"></ul>
+                </div>
+            </div>
+
+            <!-- 달력 뷰 -->
+            <div id="calendarView" class="view-container hidden">
+                <div class="calendar-header">
+                    <button id="prevMonth" class="nav-btn">‹</button>
+                    <h2 id="currentMonth"></h2>
+                    <button id="nextMonth" class="nav-btn">›</button>
+                </div>
+                <div class="calendar">
+                    <div class="calendar-weekdays">
+                        <div class="weekday">일</div>
+                        <div class="weekday">월</div>
+                        <div class="weekday">화</div>
+                        <div class="weekday">수</div>
+                        <div class="weekday">목</div>
+                        <div class="weekday">금</div>
+                        <div class="weekday">토</div>
+                    </div>
+                    <div id="calendarDays" class="calendar-days"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 할일 수정 모달 -->
+    <div id="editModal" class="modal hidden">
+        <div class="modal-content">
+            <h3>할일 수정</h3>
+            <input type="text" id="editTodoInput" placeholder="수정할 내용을 입력하세요...">
+            <input type="date" id="editTodoDate">
+            <div class="modal-buttons">
+                <button id="saveEditBtn" class="save-btn">저장</button>
+                <button id="cancelEditBtn" class="cancel-btn">취소</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

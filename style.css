@@ -1,0 +1,782 @@
+/* 기본 스타일 리셋 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fff8e1 0%, #ffcc80 50%, #ffb74d 100%);
+    min-height: 100vh;
+    color: #333;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(255, 193, 7, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 152, 0, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(255, 193, 7, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 헤더 스타일 */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 248, 225, 0.9) 100%);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 12px 40px rgba(255, 152, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 193, 7, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '🥭';
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    opacity: 0.3;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #ff9800, #ffb74d, #ffc107);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(255, 152, 0, 0.2);
+    position: relative;
+}
+
+h1::before {
+    content: '🥭';
+    margin-right: 15px;
+    font-size: 2.2rem;
+}
+
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.view-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    color: #ff9800;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    border: 2px solid rgba(255, 152, 0, 0.2);
+}
+
+.view-btn:hover {
+    background: linear-gradient(135deg, #ffe0b2, #ffcc80);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 152, 0, 0.2);
+}
+
+.view-btn.active {
+    background: linear-gradient(135deg, #ff9800, #ffb74d);
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);
+    border-color: #ff9800;
+}
+
+/* 할일 추가 섹션 */
+.add-todo-section {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 248, 225, 0.9) 100%);
+    padding: 25px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 12px 40px rgba(255, 152, 0, 0.15);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 193, 7, 0.2);
+}
+
+.input-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#todoInput, #todoDate {
+    flex: 1;
+    min-width: 200px;
+    padding: 15px 20px;
+    border: 2px solid #e8e4f3;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+#todoInput:focus, #todoDate:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 0 3px rgba(255, 152, 0, 0.2);
+}
+
+#todoInput::placeholder {
+    color: #a0a0a0;
+}
+
+.add-btn {
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #ff9800, #ffb74d);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.add-btn::before {
+    content: '🥭';
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+.add-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
+    background: linear-gradient(135deg, #f57c00, #ff9800);
+}
+
+/* 뷰 컨테이너 */
+.view-container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 248, 225, 0.9) 100%);
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 12px 40px rgba(255, 152, 0, 0.15);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 193, 7, 0.2);
+}
+
+.hidden {
+    display: none;
+}
+
+/* 투두 리스트 스타일 */
+.todo-list {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+#todoList {
+    list-style: none;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #fff8e1, #ffe0b2);
+    border-radius: 20px;
+    border-left: 4px solid #ff9800;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.todo-item::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 193, 7, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.todo-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 25px rgba(255, 152, 0, 0.2);
+    border-left-color: #f57c00;
+}
+
+.todo-item.completed {
+    opacity: 0.6;
+    text-decoration: line-through;
+    background: linear-gradient(135deg, #e8f5e8, #d4edda);
+    border-left-color: #28a745;
+}
+
+.todo-item.failed {
+    background: linear-gradient(135deg, #ffeaea, #f8d7da);
+    border-left-color: #dc3545;
+    opacity: 0.8;
+}
+
+.todo-item.failed .todo-text {
+    color: #721c24;
+    font-weight: 600;
+}
+
+.todo-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.todo-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.todo-date {
+    font-size: 0.9rem;
+    color: #ff9800;
+    font-weight: 500;
+}
+
+.todo-status {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 12px;
+    display: inline-block;
+    width: fit-content;
+    margin-top: 5px;
+}
+
+.todo-status.completed {
+    background: #d4edda;
+    color: #155724;
+}
+
+.todo-status.failed {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.complete-btn {
+    background: linear-gradient(135deg, #4caf50, #66bb6a);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.complete-btn:hover {
+    background: linear-gradient(135deg, #388e3c, #4caf50);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.fail-btn {
+    background: linear-gradient(135deg, #f44336, #ef5350);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.fail-btn:hover {
+    background: linear-gradient(135deg, #d32f2f, #f44336);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(244, 67, 54, 0.3);
+}
+
+.edit-btn {
+    background: linear-gradient(135deg, #ff9800, #ffb74d);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.edit-btn:hover {
+    background: linear-gradient(135deg, #f57c00, #ff9800);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+}
+
+.delete-btn {
+    background: linear-gradient(135deg, #757575, #9e9e9e);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+    background: linear-gradient(135deg, #616161, #757575);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(117, 117, 117, 0.3);
+}
+
+/* 달력 스타일 */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 0 10px;
+}
+
+#currentMonth {
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, #ff9800, #ffb74d, #ffc107);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.month-status {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-align: center;
+    min-width: 120px;
+    transition: all 0.3s ease;
+}
+
+.month-status.insufficient {
+    background: linear-gradient(135deg, #ffeaea, #f8d7da);
+    color: #721c24;
+    border: 2px solid #dc3545;
+}
+
+.month-status.sufficient {
+    background: linear-gradient(135deg, #e8f5e8, #d4edda);
+    color: #155724;
+    border: 2px solid #28a745;
+}
+
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #6c5ce7;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn:hover {
+    background: #5a4fcf;
+    transform: scale(1.1);
+}
+
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.weekday {
+    text-align: center;
+    padding: 15px 5px;
+    font-weight: 600;
+    color: #ff9800;
+    background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(255, 193, 7, 0.1));
+    border-radius: 15px;
+    border: 1px solid rgba(255, 152, 0, 0.2);
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-day {
+    min-height: 100px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 248, 225, 0.5));
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(255, 152, 0, 0.1);
+}
+
+.calendar-day:hover {
+    background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(255, 193, 7, 0.1));
+    border-color: #ff9800;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.2);
+}
+
+.calendar-day.other-month {
+    opacity: 0.3;
+    background: rgba(200, 200, 200, 0.3);
+}
+
+.calendar-day.today {
+    background: linear-gradient(135deg, #ff9800, #ffb74d);
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 4px 20px rgba(255, 152, 0, 0.3);
+    border: 2px solid #f57c00;
+}
+
+/* 오늘 날짜와 상태 색상이 겹칠 때 우선순위 */
+.calendar-day.today.all-completed {
+    background: linear-gradient(135deg, #2196f3, #42a5f5);
+    border: 2px solid #1976d2;
+    box-shadow: 0 4px 20px rgba(33, 150, 243, 0.4);
+}
+
+.calendar-day.today.all-failed {
+    background: linear-gradient(135deg, #f44336, #ef5350);
+    border: 2px solid #d32f2f;
+    box-shadow: 0 4px 20px rgba(244, 67, 54, 0.4);
+}
+
+.calendar-day.today.mixed-status {
+    background: linear-gradient(135deg, #9c27b0, #ba68c8);
+    border: 2px solid #7b1fa2;
+    box-shadow: 0 4px 20px rgba(156, 39, 176, 0.4);
+}
+
+/* 할일 상태별 날짜 색상 */
+.calendar-day.all-completed {
+    background: linear-gradient(135deg, #2196f3, #42a5f5);
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+    border: 2px solid #1976d2;
+}
+
+.calendar-day.all-failed {
+    background: linear-gradient(135deg, #f44336, #ef5350);
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(244, 67, 54, 0.3);
+    border: 2px solid #d32f2f;
+}
+
+.calendar-day.mixed-status {
+    background: linear-gradient(135deg, #9c27b0, #ba68c8);
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(156, 39, 176, 0.3);
+    border: 2px solid #7b1fa2;
+}
+
+.calendar-day.has-completed {
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.3), rgba(66, 165, 245, 0.2));
+    border: 2px solid #2196f3;
+    color: #1976d2;
+    font-weight: 600;
+}
+
+.calendar-day.has-failed {
+    background: linear-gradient(135deg, rgba(244, 67, 54, 0.3), rgba(239, 83, 80, 0.2));
+    border: 2px solid #f44336;
+    color: #d32f2f;
+    font-weight: 600;
+}
+
+.day-number {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.day-todos {
+    font-size: 0.8rem;
+    line-height: 1.2;
+}
+
+.todo-preview {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2px 6px;
+    border-radius: 8px;
+    margin-bottom: 2px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.calendar-day.today .todo-preview {
+    background: rgba(255, 255, 255, 0.9);
+    color: #ff9800;
+    border: 1px solid rgba(255, 152, 0, 0.3);
+}
+
+/* 상태별 날짜의 할일 미리보기 색상 */
+.calendar-day.all-completed .todo-preview,
+.calendar-day.today.all-completed .todo-preview {
+    background: rgba(255, 255, 255, 0.9);
+    color: #1976d2;
+    border: 1px solid rgba(25, 118, 210, 0.3);
+}
+
+.calendar-day.all-failed .todo-preview,
+.calendar-day.today.all-failed .todo-preview {
+    background: rgba(255, 255, 255, 0.9);
+    color: #d32f2f;
+    border: 1px solid rgba(211, 47, 47, 0.3);
+}
+
+.calendar-day.mixed-status .todo-preview,
+.calendar-day.today.mixed-status .todo-preview {
+    background: rgba(255, 255, 255, 0.9);
+    color: #7b1fa2;
+    border: 1px solid rgba(123, 31, 162, 0.3);
+}
+
+.todo-preview.failed {
+    background: rgba(220, 53, 69, 0.2);
+    color: #721c24;
+    border-left: 3px solid #dc3545;
+}
+
+.calendar-day.today .todo-preview.failed {
+    background: rgba(255, 255, 255, 0.9);
+    color: #721c24;
+    border: 1px solid rgba(220, 53, 69, 0.3);
+}
+
+/* 모달 스타일 */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+.modal-content h3 {
+    background: linear-gradient(135deg, #ff9800, #ffb74d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #e8e4f3;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.modal-content input:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 0 3px rgba(255, 152, 0, 0.2);
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.save-btn {
+    background: linear-gradient(135deg, #4caf50, #66bb6a);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.save-btn:hover {
+    background: linear-gradient(135deg, #388e3c, #4caf50);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+.cancel-btn {
+    background: linear-gradient(135deg, #757575, #9e9e9e);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(117, 117, 117, 0.3);
+}
+
+.cancel-btn:hover {
+    background: linear-gradient(135deg, #616161, #757575);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(117, 117, 117, 0.4);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .input-group {
+        flex-direction: column;
+    }
+    
+    #todoInput, #todoDate {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .todo-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .todo-actions {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .todo-btn {
+        flex: 1;
+        min-width: 60px;
+        font-size: 0.8rem;
+        padding: 6px 8px;
+    }
+    
+    .calendar-day {
+        min-height: 80px;
+        padding: 5px;
+    }
+    
+    .day-todos {
+        font-size: 0.7rem;
+    }
+    
+    #currentMonth {
+        font-size: 1.5rem;
+    }
+    
+    .month-status {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+        min-width: 100px;
+    }
+}
+
+/* 스크롤바 스타일 */
+.todo-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.todo-list::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+    background: #6c5ce7;
+    border-radius: 10px;
+}
+
+.todo-list::-webkit-scrollbar-thumb:hover {
+    background: #5a4fcf;
+}
