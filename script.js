@@ -72,6 +72,70 @@ const travelData = {
                 price: '중급',
                 image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
                 time: '20:00-22:00'
+            },
+            { 
+                name: '교토 유카타 카페', 
+                description: '전통 기모노 체험 카페', 
+                rating: 4.2, 
+                price: '중급',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '14:00-16:00'
+            },
+            { 
+                name: '도쿄 츠키지 시장', 
+                description: '세계 최대 어시장', 
+                rating: 4.6, 
+                price: '저렴',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '05:00-10:00'
+            },
+            { 
+                name: '오사카 타코야키 야타이', 
+                description: '길거리 타코야키', 
+                rating: 4.1, 
+                price: '저렴',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '16:00-20:00'
+            },
+            { 
+                name: '교토 마치야 카페', 
+                description: '전통 가옥 카페', 
+                rating: 4.3, 
+                price: '중급',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '10:00-18:00'
+            },
+            { 
+                name: '도쿄 템푸라', 
+                description: '전통 튀김 요리', 
+                rating: 4.5, 
+                price: '중급',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '18:30-20:30'
+            },
+            { 
+                name: '오사카 오뎅', 
+                description: '전통 오뎅 전문점', 
+                rating: 4.0, 
+                price: '저렴',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '19:00-23:00'
+            },
+            { 
+                name: '교토 마키즈시', 
+                description: '전통 김밥 전문점', 
+                rating: 4.2, 
+                price: '저렴',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '11:00-15:00'
+            },
+            { 
+                name: '도쿄 와규 스테이크', 
+                description: '일본산 소고기 스테이크', 
+                rating: 4.9, 
+                price: '고급',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '19:00-22:00'
             }
         ],
         attractions: [
@@ -144,6 +208,76 @@ const travelData = {
                 type: '자연',
                 image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
                 time: '08:00-18:00'
+            },
+            { 
+                name: '도쿄 하라주쿠', 
+                description: '젊은이들의 거리', 
+                type: '관광',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '10:00-20:00'
+            },
+            { 
+                name: '교토 후시미 이나리', 
+                description: '만개 토리이로 유명한 신사', 
+                type: '종교',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '08:00-18:00'
+            },
+            { 
+                name: '오사카 도톤보리', 
+                description: '오사카의 대표 거리', 
+                type: '관광',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '19:00-23:00'
+            },
+            { 
+                name: '도쿄 우에노 공원', 
+                description: '벚꽃 명소 공원', 
+                type: '자연',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '06:00-20:00'
+            },
+            { 
+                name: '교토 니조성', 
+                description: '도쿠가와 막부의 성', 
+                type: '역사',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '09:00-17:00'
+            },
+            { 
+                name: '오사카 아베노 하루카스', 
+                description: '일본 최고층 빌딩', 
+                type: '관광',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '10:00-22:00'
+            },
+            { 
+                name: '도쿄 시부야', 
+                description: '젊은이들의 중심가', 
+                type: '관광',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '10:00-24:00'
+            },
+            { 
+                name: '교토 기온마치', 
+                description: '전통 기생 거리', 
+                type: '문화',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '18:00-22:00'
+            },
+            { 
+                name: '오사카 텐노지', 
+                description: '일본 최고의 절', 
+                type: '종교',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '08:00-17:00'
+            },
+            { 
+                name: '도쿄 메이지 신궁', 
+                description: '도쿄의 대표 신사', 
+                type: '종교',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '06:00-18:00'
             }
         ],
         accommodations: [
@@ -662,6 +796,601 @@ const travelData = {
             transport: 80000,
             activities: 100000
         }
+    },
+    singapore: {
+        name: '싱가포르',
+        photos: [
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '마리나 베이 샌즈' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '가든스 바이 더 베이' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '센토사 섬' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '차이나타운' }
+        ],
+        restaurants: [
+            { 
+                name: '싱가포르 치킨라이스', 
+                description: '싱가포르 대표 음식', 
+                rating: 4.5, 
+                price: '저렴',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '12:00-15:00'
+            },
+            { 
+                name: '라크사 전문점', 
+                description: '전통 말레이 라크사', 
+                rating: 4.3, 
+                price: '저렴',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '18:00-21:00'
+            },
+            { 
+                name: '차이나타운 딤섬', 
+                description: '전통 딤섬 전문점', 
+                rating: 4.6, 
+                price: '중급',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '11:00-15:00'
+            },
+            { 
+                name: '인도 커리하우스', 
+                description: '정통 인도 커리', 
+                rating: 4.4, 
+                price: '중급',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '19:00-22:00'
+            },
+            { 
+                name: '싱가포르 시푸드', 
+                description: '신선한 해산물', 
+                rating: 4.7, 
+                price: '고급',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '18:30-21:30'
+            },
+            { 
+                name: '호커 센터', 
+                description: '길거리 음식 천국', 
+                rating: 4.2, 
+                price: '저렴',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '17:00-23:00'
+            }
+        ],
+        attractions: [
+            { 
+                name: '마리나 베이 샌즈', 
+                description: '싱가포르의 상징적인 호텔', 
+                type: '관광',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '10:00-22:00'
+            },
+            { 
+                name: '가든스 바이 더 베이', 
+                description: '미래형 식물원', 
+                type: '자연',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '09:00-21:00'
+            },
+            { 
+                name: '센토사 섬', 
+                description: '휴양지 섬', 
+                type: '자연',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '09:00-19:00'
+            },
+            { 
+                name: '차이나타운', 
+                description: '전통 중국 문화 거리', 
+                type: '문화',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '10:00-22:00'
+            },
+            { 
+                name: '리틀 인디아', 
+                description: '인도 문화 거리', 
+                type: '문화',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '10:00-21:00'
+            },
+            { 
+                name: '싱가포르 동물원', 
+                description: '세계 최고 동물원', 
+                type: '관광',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '08:30-18:00'
+            },
+            { 
+                name: '싱가포르 플라이어', 
+                description: '세계 최대 관람차', 
+                type: '관광',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '08:30-22:30'
+            },
+            { 
+                name: '클라크 키', 
+                description: '싱가포르의 밤문화 거리', 
+                type: '관광',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '19:00-02:00'
+            }
+        ],
+        accommodations: [
+            { 
+                name: '마리나 베이 샌즈', 
+                description: '5성급 호텔, 유명한 옥상 수영장', 
+                price: 500000, 
+                rating: 4.9,
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80'
+            },
+            { 
+                name: '싱가포르 리츠칼튼', 
+                description: '럭셔리 호텔, 마리나 베이 근처', 
+                price: 400000, 
+                rating: 4.8,
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80'
+            },
+            { 
+                name: '오차드 호텔', 
+                description: '쇼핑 중심가 호텔', 
+                price: 200000, 
+                rating: 4.5,
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80'
+            },
+            { 
+                name: '싱가포르 게스트하우스', 
+                description: '차이나타운 게스트하우스', 
+                price: 80000, 
+                rating: 4.1,
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80'
+            }
+        ],
+        dailyBudget: {
+            accommodation: 200000,
+            food: 80000,
+            transport: 30000,
+            activities: 60000
+        }
+    },
+    italy: {
+        name: '이탈리아',
+        photos: [
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '로마 콜로세움' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '피렌체 두오모' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '베네치아 산마르코 광장' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '밀라노 두오모' }
+        ],
+        restaurants: [
+            { 
+                name: '로마 파스타 전문점', 
+                description: '정통 이탈리안 파스타', 
+                rating: 4.7, 
+                price: '중급',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '12:00-15:00'
+            },
+            { 
+                name: '피렌체 비스테카', 
+                description: '전통 피렌체 스테이크', 
+                rating: 4.8, 
+                price: '고급',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '19:00-22:00'
+            },
+            { 
+                name: '베네치아 리조토', 
+                description: '전통 베네치아 리조토', 
+                rating: 4.6, 
+                price: '중급',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '18:30-21:30'
+            },
+            { 
+                name: '나폴리 피자', 
+                description: '정통 나폴리 피자', 
+                rating: 4.9, 
+                price: '저렴',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '12:00-15:00'
+            },
+            { 
+                name: '밀라노 리조토', 
+                description: '밀라노 스타일 리조토', 
+                rating: 4.5, 
+                price: '중급',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '19:00-22:00'
+            },
+            { 
+                name: '로마 제라토', 
+                description: '전통 이탈리안 아이스크림', 
+                rating: 4.4, 
+                price: '저렴',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '14:00-18:00'
+            }
+        ],
+        attractions: [
+            { 
+                name: '로마 콜로세움', 
+                description: '고대 로마의 원형경기장', 
+                type: '역사',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '09:00-19:00'
+            },
+            { 
+                name: '피렌체 두오모', 
+                description: '르네상스의 걸작', 
+                type: '문화',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '10:00-17:00'
+            },
+            { 
+                name: '베네치아 산마르코', 
+                description: '베네치아의 중심 광장', 
+                type: '문화',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '09:00-18:00'
+            },
+            { 
+                name: '밀라노 두오모', 
+                description: '고딕 양식의 대성당', 
+                type: '종교',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '09:00-19:00'
+            },
+            { 
+                name: '바티칸 시국', 
+                description: '세계 최소 독립국', 
+                type: '종교',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '09:00-18:00'
+            },
+            { 
+                name: '피사 사탑', 
+                description: '기울어진 탑', 
+                type: '관광',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '09:00-20:00'
+            },
+            { 
+                name: '베네치아 곤돌라', 
+                description: '전통 베네치아 배', 
+                type: '관광',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '09:00-19:00'
+            },
+            { 
+                name: '로마 판테온', 
+                description: '고대 로마의 신전', 
+                type: '역사',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '09:00-19:00'
+            }
+        ],
+        accommodations: [
+            { 
+                name: '로마 럭셔리 호텔', 
+                description: '5성급 호텔, 콜로세움 근처', 
+                price: 350000, 
+                rating: 4.8,
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80'
+            },
+            { 
+                name: '피렌체 부티크 호텔', 
+                description: '르네상스 스타일 호텔', 
+                price: 250000, 
+                rating: 4.6,
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80'
+            },
+            { 
+                name: '베네치아 카날 호텔', 
+                description: '운하 전망 호텔', 
+                price: 300000, 
+                rating: 4.7,
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80'
+            },
+            { 
+                name: '밀라노 게스트하우스', 
+                description: '밀라노 중심가 게스트하우스', 
+                price: 100000, 
+                rating: 4.2,
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80'
+            }
+        ],
+        dailyBudget: {
+            accommodation: 180000,
+            food: 90000,
+            transport: 40000,
+            activities: 70000
+        }
+    },
+    spain: {
+        name: '스페인',
+        photos: [
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '바르셀로나 사그라다 파밀리아' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '마드리드 프라도 미술관' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '세비야 알카사르' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '그라나다 알함브라 궁전' }
+        ],
+        restaurants: [
+            { 
+                name: '마드리드 파에야', 
+                description: '전통 스페인 파에야', 
+                rating: 4.6, 
+                price: '중급',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '13:00-16:00'
+            },
+            { 
+                name: '바르셀로나 타파스', 
+                description: '전통 스페인 타파스', 
+                rating: 4.5, 
+                price: '저렴',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '20:00-23:00'
+            },
+            { 
+                name: '세비야 가스파초', 
+                description: '전통 안달루시아 수프', 
+                rating: 4.4, 
+                price: '저렴',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '12:00-15:00'
+            },
+            { 
+                name: '그라나다 하몬', 
+                description: '전통 스페인 햄', 
+                rating: 4.7, 
+                price: '중급',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '19:00-22:00'
+            },
+            { 
+                name: '바르셀로나 산그리아', 
+                description: '전통 스페인 와인', 
+                rating: 4.3, 
+                price: '중급',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '18:00-21:00'
+            },
+            { 
+                name: '마드리드 초콜릿', 
+                description: '전통 스페인 초콜릿', 
+                rating: 4.2, 
+                price: '저렴',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '16:00-18:00'
+            }
+        ],
+        attractions: [
+            { 
+                name: '사그라다 파밀리아', 
+                description: '가우디의 미완성 대성당', 
+                type: '종교',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '09:00-18:00'
+            },
+            { 
+                name: '프라도 미술관', 
+                description: '세계 최고 미술관', 
+                type: '문화',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '10:00-20:00'
+            },
+            { 
+                name: '알함브라 궁전', 
+                description: '이슬람 건축의 걸작', 
+                type: '문화',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '08:30-18:00'
+            },
+            { 
+                name: '세비야 알카사르', 
+                description: '무어인 궁전', 
+                type: '역사',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '09:30-19:00'
+            },
+            { 
+                name: '바르셀로나 파크 귀엘', 
+                description: '가우디의 공원', 
+                type: '자연',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '08:00-21:00'
+            },
+            { 
+                name: '마드리드 왕궁', 
+                description: '스페인 왕실 궁전', 
+                type: '역사',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '10:00-18:00'
+            },
+            { 
+                name: '세비야 대성당', 
+                description: '세계 최대 고딕 성당', 
+                type: '종교',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '11:00-17:00'
+            },
+            { 
+                name: '바르셀로나 라스 람블라스', 
+                description: '바르셀로나의 중심 거리', 
+                type: '관광',
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80',
+                time: '10:00-24:00'
+            }
+        ],
+        accommodations: [
+            { 
+                name: '마드리드 럭셔리 호텔', 
+                description: '5성급 호텔, 프라도 근처', 
+                price: 300000, 
+                rating: 4.7,
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80'
+            },
+            { 
+                name: '바르셀로나 부티크 호텔', 
+                description: '가우디 스타일 호텔', 
+                price: 250000, 
+                rating: 4.6,
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80'
+            },
+            { 
+                name: '세비야 전통 호텔', 
+                description: '안달루시아 스타일 호텔', 
+                price: 180000, 
+                rating: 4.5,
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80'
+            },
+            { 
+                name: '그라나다 게스트하우스', 
+                description: '알함브라 근처 게스트하우스', 
+                price: 80000, 
+                rating: 4.3,
+                image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80'
+            }
+        ],
+        dailyBudget: {
+            accommodation: 150000,
+            food: 70000,
+            transport: 35000,
+            activities: 60000
+        }
+    },
+    germany: {
+        name: '독일',
+        photos: [
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '베를린 브란덴부르크 문' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '뮌헨 마리엔플라츠' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '함부르크 항구' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '쾰른 대성당' }
+        ],
+        restaurants: [
+            { name: '베를린 브라트부르스트', description: '전통 독일 소시지', rating: 4.5, price: '저렴', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '12:00-15:00' },
+            { name: '뮌헨 비어홀', description: '전통 독일 맥주홀', rating: 4.6, price: '중급', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '18:00-22:00' },
+            { name: '함부르크 피시', description: '신선한 생선 요리', rating: 4.4, price: '중급', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '19:00-22:00' },
+            { name: '쾰른 라인 와인', description: '전통 독일 와인', rating: 4.3, price: '중급', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '18:30-21:30' },
+            { name: '베를린 커리부르스트', description: '베를린 대표 길거리 음식', rating: 4.2, price: '저렴', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '16:00-20:00' },
+            { name: '뮌헨 슈니첼', description: '전통 독일 튀김', rating: 4.5, price: '중급', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '12:00-15:00' }
+        ],
+        attractions: [
+            { name: '브란덴부르크 문', description: '베를린의 상징', type: '관광', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:00-18:00' },
+            { name: '뮌헨 마리엔플라츠', description: '뮌헨의 중심 광장', type: '관광', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '10:00-22:00' },
+            { name: '함부르크 항구', description: '독일 최대 항구', type: '관광', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:00-19:00' },
+            { name: '쾰른 대성당', description: '고딕 양식의 대성당', type: '종교', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:00-19:00' },
+            { name: '베를린 장벽', description: '역사적 유적지', type: '역사', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:00-18:00' },
+            { name: '뮌헨 옥토버페스트', description: '세계 최대 맥주 축제', type: '문화', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '10:00-23:00' },
+            { name: '함부르크 미니어처', description: '세계 최대 미니어처 박물관', type: '문화', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:00-18:00' },
+            { name: '쾰른 쵸콜라테', description: '독일 최대 초콜릿 박물관', type: '문화', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '10:00-18:00' }
+        ],
+        accommodations: [
+            { name: '베를린 럭셔리 호텔', description: '5성급 호텔, 브란덴부르크 문 근처', price: 250000, rating: 4.7, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80' },
+            { name: '뮌헨 전통 호텔', description: '바이에른 스타일 호텔', price: 200000, rating: 4.6, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80' },
+            { name: '함부르크 항구 호텔', description: '항구 전망 호텔', price: 180000, rating: 4.5, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80' },
+            { name: '쾰른 게스트하우스', description: '쾰른 중심가 게스트하우스', price: 90000, rating: 4.2, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80' }
+        ],
+        dailyBudget: { accommodation: 120000, food: 60000, transport: 30000, activities: 50000 }
+    },
+    uk: {
+        name: '영국',
+        photos: [
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '런던 빅벤' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '에든버러 성' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '옥스포드 대학' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '바스 온천' }
+        ],
+        restaurants: [
+            { name: '런던 피시 앤 칩스', description: '전통 영국 음식', rating: 4.4, price: '저렴', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '12:00-15:00' },
+            { name: '에든버러 하기스', description: '전통 스코틀랜드 요리', rating: 4.3, price: '중급', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '18:00-21:00' },
+            { name: '옥스포드 티타임', description: '전통 영국 애프터눈 티', rating: 4.6, price: '중급', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '15:00-17:00' },
+            { name: '바스 푸딩', description: '전통 영국 디저트', rating: 4.2, price: '저렴', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '14:00-18:00' },
+            { name: '런던 인디안 커리', description: '영국식 인도 커리', rating: 4.5, price: '중급', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '19:00-22:00' },
+            { name: '에든버러 위스키', description: '전통 스코틀랜드 위스키', rating: 4.7, price: '고급', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '20:00-23:00' }
+        ],
+        attractions: [
+            { name: '빅벤', description: '런던의 상징', type: '관광', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:00-18:00' },
+            { name: '에든버러 성', description: '스코틀랜드의 상징', type: '역사', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:30-18:00' },
+            { name: '옥스포드 대학', description: '세계 최고 대학', type: '문화', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '10:00-17:00' },
+            { name: '바스 온천', description: '로마 시대 온천', type: '자연', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:00-21:00' },
+            { name: '런던 타워', description: '역사적인 성', type: '역사', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:00-17:30' },
+            { name: '에든버러 로얄 마일', description: '스코틀랜드의 역사 거리', type: '문화', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '10:00-18:00' },
+            { name: '옥스포드 보들리안', description: '세계 최고 도서관', type: '문화', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:00-17:00' },
+            { name: '바스 로마 목욕탕', description: '고대 로마 온천', type: '역사', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:00-21:00' }
+        ],
+        accommodations: [
+            { name: '런던 럭셔리 호텔', description: '5성급 호텔, 빅벤 근처', price: 400000, rating: 4.8, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80' },
+            { name: '에든버러 성 호텔', description: '스코틀랜드 스타일 호텔', price: 250000, rating: 4.6, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80' },
+            { name: '옥스포드 대학 호텔', description: '대학 근처 호텔', price: 200000, rating: 4.5, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80' },
+            { name: '바스 게스트하우스', description: '온천 근처 게스트하우스', price: 120000, rating: 4.3, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80' }
+        ],
+        dailyBudget: { accommodation: 200000, food: 80000, transport: 40000, activities: 70000 }
+    },
+    canada: {
+        name: '캐나다',
+        photos: [
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '토론토 CN 타워' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '밴쿠버 스탠리 파크' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '몬트리올 노트르담' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '캘거리 스탬피드' }
+        ],
+        restaurants: [
+            { name: '토론토 푸틴', description: '캐나다 대표 음식', rating: 4.5, price: '저렴', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '12:00-15:00' },
+            { name: '밴쿠버 시푸드', description: '신선한 태평양 해산물', rating: 4.7, price: '고급', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '18:00-22:00' },
+            { name: '몬트리올 스모크드 미트', description: '전통 퀘벡 요리', rating: 4.6, price: '중급', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '19:00-22:00' },
+            { name: '캘거리 스테이크', description: '알버타 소고기 스테이크', rating: 4.8, price: '고급', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '18:30-22:00' },
+            { name: '토론토 메이플 시럽', description: '캐나다 대표 디저트', rating: 4.3, price: '저렴', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '14:00-18:00' },
+            { name: '밴쿠버 아시아 퓨전', description: '다문화 퓨전 요리', rating: 4.4, price: '중급', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '19:00-22:00' }
+        ],
+        attractions: [
+            { name: 'CN 타워', description: '토론토의 상징', type: '관광', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:00-22:00' },
+            { name: '스탠리 파크', description: '밴쿠버의 대표 공원', type: '자연', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '06:00-22:00' },
+            { name: '노트르담 대성당', description: '몬트리올의 상징', type: '종교', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:00-17:00' },
+            { name: '캘거리 스탬피드', description: '세계 최대 로데오', type: '문화', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:00-23:00' },
+            { name: '나이아가라 폭포', description: '세계 3대 폭포', type: '자연', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:00-19:00' },
+            { name: '밴쿠버 아쿠아리움', description: '태평양 해양생물', type: '관광', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '10:00-18:00' },
+            { name: '몬트리올 올드타운', description: '프랑스 식민지 마을', type: '문화', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '10:00-22:00' },
+            { name: '캘거리 타워', description: '캘거리 최고층 빌딩', type: '관광', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '10:00-22:00' }
+        ],
+        accommodations: [
+            { name: '토론토 럭셔리 호텔', description: '5성급 호텔, CN 타워 근처', price: 300000, rating: 4.7, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80' },
+            { name: '밴쿠버 해변 호텔', description: '태평양 전망 호텔', price: 250000, rating: 4.6, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80' },
+            { name: '몬트리올 프랑스 호텔', description: '퀘벡 스타일 호텔', price: 200000, rating: 4.5, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80' },
+            { name: '캘거리 게스트하우스', description: '캘거리 중심가 게스트하우스', price: 100000, rating: 4.2, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80' }
+        ],
+        dailyBudget: { accommodation: 180000, food: 80000, transport: 40000, activities: 60000 }
+    },
+    australia: {
+        name: '호주',
+        photos: [
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '시드니 오페라 하우스' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '멜버른 페더럴 스퀘어' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '브리즈번 강' },
+            { url: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop&q=80', caption: '퍼스 스완 강' }
+        ],
+        restaurants: [
+            { name: '시드니 바베큐', description: '전통 호주 바베큐', rating: 4.6, price: '중급', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '18:00-22:00' },
+            { name: '멜버른 커피', description: '세계 최고 커피', rating: 4.8, price: '저렴', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '07:00-15:00' },
+            { name: '브리즈번 시푸드', description: '신선한 해산물', rating: 4.7, price: '고급', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '18:30-22:00' },
+            { name: '퍼스 와인', description: '호주 최고 와인', rating: 4.5, price: '중급', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '19:00-22:00' },
+            { name: '시드니 피시 앤 칩스', description: '호주식 피시 앤 칩스', rating: 4.4, price: '저렴', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '12:00-15:00' },
+            { name: '멜버른 아시아 퓨전', description: '다문화 퓨전 요리', rating: 4.6, price: '중급', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '19:00-22:00' }
+        ],
+        attractions: [
+            { name: '오페라 하우스', description: '시드니의 상징', type: '문화', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:00-17:00' },
+            { name: '페더럴 스퀘어', description: '멜버른의 중심', type: '관광', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '10:00-22:00' },
+            { name: '브리즈번 강', description: '아름다운 강변', type: '자연', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '06:00-22:00' },
+            { name: '스완 강', description: '퍼스의 아름다운 강', type: '자연', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '06:00-22:00' },
+            { name: '시드니 하버 브리지', description: '세계 최대 아치교', type: '관광', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:00-18:00' },
+            { name: '멜버른 야라 강', description: '멜버른의 아름다운 강', type: '자연', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '06:00-22:00' },
+            { name: '브리즈번 골드코스트', description: '세계 최고 해변', type: '자연', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '09:00-19:00' },
+            { name: '퍼스 킹스 파크', description: '세계 최대 도시 공원', type: '자연', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80', time: '06:00-22:00' }
+        ],
+        accommodations: [
+            { name: '시드니 럭셔리 호텔', description: '5성급 호텔, 오페라 하우스 근처', price: 350000, rating: 4.8, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80' },
+            { name: '멜버른 부티크 호텔', description: '아트 스타일 호텔', price: 250000, rating: 4.6, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80' },
+            { name: '브리즈번 리버 호텔', description: '강변 전망 호텔', price: 200000, rating: 4.5, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80' },
+            { name: '퍼스 게스트하우스', description: '퍼스 중심가 게스트하우스', price: 120000, rating: 4.3, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&q=80' }
+        ],
+        dailyBudget: { accommodation: 200000, food: 90000, transport: 50000, activities: 80000 }
     }
 };
 
